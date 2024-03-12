@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@700&family=Young+Serif&display=swap');
+
+:root
+{
+    --Moderate--violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    
+}
+*
+{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    height: 100%;
+    background-color: var(--Light-gray);
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 500;
+}
+.main-container{
+    position: absolute;
+    top: 15%;
+    margin: 0 100px;
+
+}
+.card{
+    background-color: var(--White);
+    border-radius: 1rem;
+    color: var(--Very-dark-grayish-blue);
+    padding: 1rem;
+    transition: 0.3s;
+}
+.card:hover
+{
+    box-shadow: 3px 5px 10px hsl(219deg 29% 14% / 30%);
+}
+.card.card-primary{
+    background-color: var(--Moderate--violet);
+    background-image: url(/assets/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+    color: var(--Light-gray);
+}
+.card.card-gray{
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--Light-gray);
+}
+.card.card-dark{
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--Light-gray);
+}
+.card-header-img img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid var(--Light-gray);
+}
+.img-violet-border  img{
+    border: 2px solid var(--Moderate--violet);
+}
+.card-header-info small{
+    opacity: 0.5;
+}
+.card-body h2{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--White);
+}
+.card-body p{
+    font-size: 0.86rem;
+    opacity: 0.75;
+    padding-top: 1rem;
+}
+.card-body h2.kira,
+h2.jeanette{
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 600;
+    
+}
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        top: 5%;
+        margin: 0px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
